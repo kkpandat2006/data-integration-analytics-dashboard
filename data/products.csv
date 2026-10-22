@@ -1,1 +1,5 @@
-product_id,product_name,category\nP101,Laptop,Electronics\nP102,Phone,Electronics\nP103,Chair,Furniture\n
+
+product_id,product_name,category
+P101,Laptop,Electronics
+P102,Phone,Electronics
+P103,Chair,Furniture

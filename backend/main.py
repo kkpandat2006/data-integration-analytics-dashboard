@@ -15,8 +15,8 @@ DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data"
 def load_sample_data():
     conn = get_connection()
     cursor = conn.cursor()
-    cursor.execute("SELECT COUNT(*) FROM orders")
-    if cursor.fetchone()[0] > 0:
+    cursor.execute("SELECT COUNT(*) AS total FROM orders")
+    if cursor.fetchone()["total"] > 0:
         conn.close()
         return
     conn.close()
